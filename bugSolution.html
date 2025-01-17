@@ -1,0 +1,9 @@
+The solution is to avoid using `@apply` with pseudo-selectors.  Instead, apply the styles directly using standard class names:
+
+```html
+<button class="hover:bg-blue-500">
+  Hover Me
+</button>
+```
+
+This approach correctly applies the `bg-blue-500` style when the button is hovered.  This removes the ambiguity and ensures proper functioning of pseudo-selector styles.
